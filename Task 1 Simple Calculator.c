@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    // Input two numbers
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Perform operations
+    printf("\n--- Simple Calculator ---\n");
+    printf("Addition: %d + %d = %d\n", num1, num2, num1 + num2);
+    printf("Subtraction: %d - %d = %d\n", num1, num2, num1 - num2);
+    printf("Multiplication: %d * %d = %d\n", num1, num2, num1 * num2);
+
+    if (num2 != 0) {
+        printf("Division: %d / %d = %d\n", num1, num2, num1 / num2);
+        printf("Modulus: %d %% %d = %d\n", num1, num2, num1 % num2);
+    } else {
+        printf("Division: Not possible (division by zero)\n");
+        printf("Modulus: Not possible (modulus by zero)\n");
+    }
+
+    return 0;
+}
